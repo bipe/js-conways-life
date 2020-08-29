@@ -1,0 +1,54 @@
+/*
+Já que não consegui usar bootstrap nessa tarefa (por trazer problemas ao campo e pixels do jogo)
+defini algumas coisas básicas como as fontes que são as mesmas do bootstrap
+*/
+
+html, body, #botao_play {
+	font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+
+h1, footer{
+	margin: 25px;
+}
+
+#botao_play {
+	height: 50px;
+	width: 100px;
+	align-content: center;
+	margin: 25px auto;
+	cursor: pointer;
+}
+
+
+#campo {
+	margin: 5px auto;
+	height: 480px;
+	width: 480px;
+
+	/*Como os pixels têm borda embaixo e à direita, o campo deve ser ao contrário, 
+	evitando assim uma borda mais grossa por "acumular" a borda do pixel+campo */
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+
+
+#botao_play, #campo, #legenda, h1, footer {
+	/*Centralizar os componentes na tela usando flex e wrap*/
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+.pixel {
+	width: 23px;
+	height: 23px;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+	background:'white';
+}
+
+.botao:hover{
+	background-color: lightgreen;
+}

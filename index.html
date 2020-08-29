@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conway's Game of Life</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Bipe (:" />
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<h1>Conway's Game of Life</h1>
+		<div id="campo"></div>
+		<button class="botao" id="botao_play">Iterar</button>
+
+		<div id="legenda">
+			White pixel: dead<br>Green pixel: alive<br>
+			Click on a pixel or drag the mouse to 'paint'<br>
+		</div>
+	
+
+		<footer>
+			<p>© 2020 Luís Felipe "Bipe" Marconi - Disponível no
+				<a href="https://github.com/bipe" target="_blank" rel="nofollow noopener noreferrer">
+				Github
+				</a>
+			</p>
+			<!--Script com funções de matrizes - doc original em: https://www.npmjs.com/package/array2d -->
+			<script src="src/Array2D.min.js" type="text/javascript" charset="utf-8"></script>
+			<!--Demais scripts-->
+			<script src="src/pixel.js" type="text/javascript" charset="utf-8"></script>
+			<script src="src/campo.js" type="text/javascript" charset="utf-8"></script>
+			<script src="src/controller.js" type="text/javascript" charset="utf-8"></script>
+			<script src="src/view.js" type="text/javascript" charset="utf-8"></script>
+			<script src="src/main.js" type="text/javascript" charset="utf-8"></script>
+		</footer>
+
+	</body>
+</html>
